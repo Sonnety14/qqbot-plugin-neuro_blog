@@ -1,0 +1,25 @@
+name: neuro-blog
+services:
+  blog:
+    image: caddy:2.11.4-alpine
+    container_name: neuro-blog
+    restart: unless-stopped
+    user: "65534:65534"
+    read_only: true
+    cap_drop: [ALL]
+    cap_add: [NET_BIND_SERVICE]
+    security_opt: [no-new-privileges:true]
+    mem_limit: 128m
+    cpus: 0.5
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ${NEURO_BLOG_PUBLIC_DIR:?Set the public output directory}:/srv:ro
+    tmpfs:
+      - /config:uid=65534,gid=65534,size=8m
+      - /data:uid=65534,gid=65534,size=8m
+      - /tmp:uid=65534,gid=65534,size=8m
+    networks: [edge]
+networks:
+  edge:
+    external: true
+    name: ${NEURO_BLOG_EDGE_NETWORK:?Set the existing proxy network}

@@ -1,0 +1,12 @@
+{
+  "history_file": "/private/neuro-blog/history.json",
+  "schedule_mode": "weekly_batch",
+  "budget_scope": "blog",
+  "gateway_url": "http://127.0.0.1:8089/blog_stocks",
+  "gateway_token": "REPLACE_WITH_PRIVATE_STOCKS_ROUTE_TOKEN",
+  "model": "YOUR_VERIFIED_GEMINI_MODEL",
+  "persona_id": "",
+  "control_host": "127.0.0.1",
+  "control_port": 18791,
+  "control_token": "REPLACE_WITH_A_RANDOM_PRIVATE_TOKEN_AT_LEAST_32_CHARS"
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "path": "happy/happy1.png",
+    "enabled": true
+  },
+  {
+    "path": "happy/happy2.png",
+    "enabled": true
+  },
+  {
+    "path": "thinking/thinking1.png",
+    "enabled": true
+  }
+]

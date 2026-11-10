@@ -1,0 +1,30 @@
+{
+  "database": "/private/neuro-blog/chat.sqlite3",
+  "blog_database": "/private/neuro-blog/blog.sqlite3",
+  "blog_daily_limit_nusd": 5000000000,
+  "pricing": {
+    "model": "YOUR_VERIFIED_GEMINI_MODEL",
+    "version": "YOUR_PRICE_REVIEW_ID",
+    "valid_from": "YYYY-MM-DD",
+    "valid_until": "YYYY-MM-DD",
+    "input_nusd_per_token": "REPLACE_WITH_INTEGER",
+    "output_nusd_per_token": "REPLACE_WITH_INTEGER",
+    "cached_nusd_per_token": "REPLACE_WITH_INTEGER"
+  },
+  "routes": {
+    "blog_memory": {
+      "kind": "gemini",
+      "key": "REPLACE_WITH_YOUR_UPSTREAM_API_KEY",
+      "token": "REPLACE_WITH_RANDOM_BLOG_MEMORY_TOKEN",
+      "budget_scope": "blog",
+      "daily_limit_nusd": 5000000000
+    },
+    "blog_stocks": {
+      "kind": "gemini",
+      "key": "REPLACE_WITH_YOUR_UPSTREAM_API_KEY",
+      "token": "REPLACE_WITH_RANDOM_BLOG_STOCKS_TOKEN",
+      "budget_scope": "blog",
+      "daily_limit_nusd": 5000000000
+    }
+  }
+}

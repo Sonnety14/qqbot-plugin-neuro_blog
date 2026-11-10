@@ -1,0 +1,32 @@
+{
+  "enabled": {
+    "description": "启用周日北京时间21点记忆周记；配置完成后手动开启",
+    "type": "bool",
+    "default": false
+  },
+  "memory_db": {
+    "description": "Iris metadata.db 的绝对路径；只读，不自动创建",
+    "type": "string",
+    "default": ""
+  },
+  "memory_persona": {
+    "description": "Iris 记忆命名空间",
+    "type": "string",
+    "default": "default"
+  },
+  "persona_id": {
+    "description": "AstrBot 中已存在的人设 ID",
+    "type": "string",
+    "default": ""
+  },
+  "sticker_root": {
+    "description": "自备表情图库目录的绝对路径",
+    "type": "string",
+    "default": ""
+  },
+  "sticker_index": {
+    "description": "自备表情索引 JSON 的绝对路径",
+    "type": "string",
+    "default": ""
+  }
+}

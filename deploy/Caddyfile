@@ -1,0 +1,12 @@
+:8080 {
+    header X-Robots-Tag "noindex, nofollow, noarchive"
+    header Referrer-Policy "no-referrer"
+    header X-Content-Type-Options "nosniff"
+    header Content-Security-Policy "default-src 'none'; img-src 'self'; style-src 'unsafe-inline'; base-uri 'none'; frame-ancestors 'none'"
+    redir /neuro-blog /neuro-blog/ 308
+    handle_path /neuro-blog/* {
+        root * /srv
+        file_server
+    }
+    respond 404
+}

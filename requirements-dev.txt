@@ -1,0 +1,5 @@
+-r requirements.txt
+-r optional/astrbot_plugin_neuro_stocks/requirements.txt
+-r services/budget_gateway/requirements.txt
+pytest>=8,<10
+Pillow>=10,<13

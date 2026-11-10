@@ -1,0 +1,6 @@
+name: astrbot_plugin_neuro_stocks
+display_name: Neuro 炒股日记
+desc: 每周三集中回放五个历史交易日，发布虚拟炒股周记
+version: v0.1.0
+author: Sonnety14
+repo: https://github.com/Sonnety14/qqbot-plugin-neuro_blog

@@ -1,0 +1,7 @@
+{
+  "private_config": {
+    "description": "私有配置绝对路径，留空读取插件数据目录 private.json；无配置保持关闭",
+    "type": "string",
+    "default": ""
+  }
+}

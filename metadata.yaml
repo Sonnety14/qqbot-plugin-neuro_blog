@@ -1,0 +1,6 @@
+name: astrbot_plugin_neuro_blog
+display_name: neuro的彩蛋博客
+desc: 每周新记忆周记与可选历史炒股游戏，独立预算、静态发布
+version: v0.1.0
+author: Sonnety14
+repo: https://github.com/Sonnety14/qqbot-plugin-neuro_blog

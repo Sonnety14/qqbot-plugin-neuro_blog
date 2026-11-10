@@ -1,0 +1,5 @@
+{
+  "gateway_url": "http://127.0.0.1:8089/blog_memory",
+  "gateway_token": "REPLACE_WITH_RANDOM_MEMORY_ROUTE_TOKEN",
+  "model": "YOUR_VERIFIED_GEMINI_MODEL"
+}
